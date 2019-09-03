@@ -8,15 +8,16 @@ receive the entire timestamp with either CET or CEST appended</p>
 
 <h2> How to use </h2>
 <p> Import:  <br />
-
+cetcest "github.com/TobiasFP/TimeInCetOrCestToEpoch_GoLang/CetCest"
+<br />
 Use: <br />
 give input of the format: <br />
 layout := "2006-01-02T15:04:00"
-IsCet(layout) // Returns true
+cetcest.IsCet(layout) // Returns true
 <br />
 
 summertime := "2018-04-01T07:45:00"
-GetCETOrCEST(summertime) // returns "2018-04-01T07:45:00 CEST"
+cetcest.GetCETOrCEST(summertime) // returns "2018-04-01T07:45:00 CEST"
 
 </p>
 
