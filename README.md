@@ -17,8 +17,15 @@ cetcest.IsCet(layout) // Returns true
 <br />
 
 summertime := "2018-04-01T07:45:00"
-cetcest.GetCETOrCEST(summertime) // returns "2018-04-01T07:45:00 CEST"
+summertime = cetcest.GetCETOrCEST(summertime) // returns "2018-04-01T07:45:00 CEST"
+<br />
+It is now simple to get the epoch timestamp as follows:
+, err := time.Parse(layout, summertime)
+if err != nil {
+    fmt.Println(err)
+    t.Error("Didnt Expect to receive: Expected: a time'")
 
+}
 </p>
 
 <h2> Problems: </h2>
